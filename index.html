@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+ <link rel="stylesheet" href="styles.css">
+ <script src="https://kit.fontawesome.com/f52cb7977d.js" crossorigin="anonymous"></script>
+ <title>Budget and Expenses</title>
+</head>
+
+<body>
+ <header class="text-center pt-3">
+  <h2>BUDGET APP</h2>
+ </header>
+ <section class="container">
+  <div class="row g-5">
+   <div class="col-md-6">
+    <div class="mb-3">
+     <form action="" class="p-5 border  border-3 border-success">
+      <div class="mb-3">
+       <label for="budget" class="form-label">Please Enter Your Budget</label>
+       <input type="number" class="form-control border-success budget" id="budget">
+      </div>
+      <button type="button" class="btn btn-outline-success first-button">Calculate</button>
+     </form>
+    </div>
+    <div>
+     <form action="" class="p-5 border  border-3 border-danger">
+      <div class="mb-3">
+       <label for="budget" class="form-label label-1">Please Enter Expense Name</label>
+       <input type="text" class="form-control border-danger expenses-name" id="">
+      </div>
+      <div class="mb-3">
+       <label for="budget" class="form-label label-1">Please Enter Expense Amount</label>
+       <input type="number" class="form-control border-danger expenses-amount" id="">
+      </div>
+      <button type="button" class="btn btn-outline-danger second-button">Add Expense</button>
+     </form>
+    </div>
+   </div>
+
+   <div class="col-md-6">
+    <div class="inner-section d-flex justify-content-between py-5" id="">
+     <div class="budget-container">
+      <h4>BUDGET</h4>
+      <i class="fa-solid fa-money-bill text-primary"></i>
+      <div class="budget-value text-center fs-3 fw-bold text-success">$ <span id="budget-number">0</span></div>
+     </div>
+     <div class="expense-container">
+      <h4>EXPENSES</h4>
+      <i class="fa-solid fa-credit-card text-primary"></i>
+      <div class="expense-value text-center fs-3 fw-bold text-success">$ <span id="expenses">0</span></div>
+     </div>
+     <div class="balance-container">
+      <h4>BALANCE</h4>
+      <i class="fa-solid fa-dollar-sign text-primary"></i>
+      <div class="balance-value text-center fs-3 fw-bold ">$ <span id="balance">0</span></div>
+     </div>
+    </div>
+    <div class="container2 mt-5">
+     <div class="last-value d-flex">
+      <div class="l-title px-4 fs-4 fw-bold">Expenses Title</div>
+      <div class="l-value px-4 fs-4 fw-bold">Expenses Value</div>
+     </div>
+     <div class="expenseForm"></div>
+    </div>
+   </div>
+  </div>
+ </section>
+
+
+
+
+
+
+
+
+ <script defer src="script.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+  integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</body>
+
+</html> 
